@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* font-weight: 100; */
+}
+
+.header {
+  background-image: url("../images/hero-cover.png");
+  /* background-color: darkred;
+  background-blend-mode: multiply; */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.header img {
+  width: auto;
+  height: auto;
+}
+
+/*Arrow Down Scroll*/
+header .arrow-down-scroll {
+  position: relative;
+  top: 50px;
+}
+
+header .arrow-down-scroll .fa-angle-down {
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+}
+/*End of Arrow Down Scroll*/
+
+.header h1 {
+  color: #fff;
+  line-height: 100px;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.btn {
+  color: #fff;
+  background: crimson;
+  padding: 10px 40px;
+  text-decoration: none;
+  transition: background 0;
+}
+
+.nav {
+  background: #000;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 10px;
+  transition: background 0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: gold;
+}
+
+.btn:hover,
+.nav ul li:hover {
+  /*background: gold;*/
+  cursor: pointer;
+  transition: background 0;
+  opacity: 0.8;
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.cover {
+  background: #6e9887;
+  background-size: cover;
+  height: 600px;
+}
+
+.cover .container {
+  position: relative;
+  top: 220px;
+}
+
+.cover h2 {
+  color: #fff;
+  text-align: right;
+}
+
+.cover p {
+  color: #fff;
+  text-align: right;
+}
+
+.cover .btn {
+  margin: 10px 0 0;
+  float: right;
+}
+
+#counter-container {
+  background: #f4f4f2;
+}
+
+#photo-slider {
+  background: grey;
+  padding: 20px;
+  color: white;
+}
+
+.arrow-down-scroll {
+  position: relative;
+
+  animation: up-down 2s steps(50, start) infinite reverse;
+
+  margin: auto;
+}
+
+/* arrow down animation */
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.section-header {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px auto;
+}
+
+/* Responsive design */
+@media (max-width: 769px) {
+  .header h1 {
+    font-size: 70px;
+  }
+  .header {
+    background-position: center center;
+  }
+}

@@ -1,0 +1,35 @@
+.to-top {
+  color: crimson;
+
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.4s;
+  /* disable pointer events on hovering over the scroll-top button when it's hidden */
+  pointer-events: none;
+}
+
+.to-top.active {
+  bottom: 32px;
+  /*enable pointer events back when the scroll-top button is visible*/
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.to-top:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+  .to-top {
+    right: 10px;
+  }
+}

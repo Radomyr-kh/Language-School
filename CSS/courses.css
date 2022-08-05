@@ -1,0 +1,82 @@
+#courses-table {
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+/*Preventing overlapping of fixed navbar */
+:root {
+  --header-height: 50px;
+  scroll-padding-top: calc(var(--header-height) + 10px);
+}
+
+#courses-table h2 a {
+  height: var(--header-height);
+}
+/*end of preventing overlapping*/
+
+#price-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.columns {
+  width: 380px;
+  margin: 0 10px 20px 10px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price .title-row {
+  background-color: crimson;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: crimson;
+  opacity: 0.8;
+}
+
+/* Tablets */
+@media screen and (max-width: 769px) {
+  #price-list {
+    text-align: center;
+    flex-direction: column;
+  }
+  .columns {
+    width: 90%;
+  }
+}

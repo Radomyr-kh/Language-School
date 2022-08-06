@@ -17,6 +17,7 @@
   max-width: 800px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
+  margin-bottom: 20px;
 }
 
 iframe {
